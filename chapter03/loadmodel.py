@@ -22,3 +22,6 @@ def load_model():
         }
     )
     return model
+
+def load_postgresconfig():
+    return os.getenv("POSTGRES_DSN")
