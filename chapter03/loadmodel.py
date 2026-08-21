@@ -7,7 +7,7 @@ load_dotenv(override=True, verbose=True)
 # 初始化模型
 def load_model():
     model = init_chat_model(
-        "qwen3.7-plus-2026-05-26",
+        os.getenv("MODEL_NAME"),
         model_provider="openai",
         temperature=0.5,
         max_tokens=1024,
